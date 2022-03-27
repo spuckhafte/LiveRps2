@@ -14,4 +14,4 @@ https://github.com/spuckhafte/RockPaperScissor
 4. No scoreboard for a particular room
 5. Buggy if more than 1 rooms are made
 
-# All problems of the previous version was fixed in this one
+## All problems of the previous version were fixed in this one
