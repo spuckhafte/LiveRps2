@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#you {
+    color: yellow;
+    font-size: large;
+}
+
+#partner {
+    font-size: large;
+}
+
+#you::before {
+    content: 'You: ';
+    color: rgb(16, 201, 16);
+}
+
+
+#partner::before {
+    content: 'Rival: ';
+    color: red;
+}
+
+.interact button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    font-size: large;
+    font-weight: bold;
+    background-color: #36393f;
+    margin-top: 10px;
+    cursor: not-allowed;
+    margin-inline: 5px;
+    border: 1px solid #f04747;
+}
+.noblock button {
+    border: 1px solid #43b581;
+    background-color: #7289da;
+    cursor: pointer !important;
+}
+
+small {
+    color: gray;
+    font-size: medium;
+    margin-left: 5px;
+    font-weight: bolder;
+}
+
+small::before { content: '( select one, when it says ' }
+
+small::after {
+    content: ' SHOOT )';
+}
+
+.result {
+    font-size: larger;
+}
+
+.won { color: greenyellow; }
+.lost { color: rgb(255, 111, 111); }
+.tie { color: rgb(217, 159, 255) !important; }
+
+.score {
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+#myscore {
+    color: rgb(16, 201, 16);
+}
+
+#partnerscore {
+    color: red;
+}
+
+.btn {
+    width: 60px;
+    height: 30px;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    margin-inline: 2px;
+    cursor: pointer;
+    border-radius: 10%;
+    margin-bottom: 15px;
+}
+
+.leave {
+    margin-left: 10px;
+    background-color: #f47b68;
+}
+
+.retry {
+    background-color: #ff73fa;
+}
+
+.rps {
+    font-size: large;
+    font-weight: bolder;
+}
+
+#yourps {
+    color: rgb(16, 201, 16);
+}
+
+#rivalrps {
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.no {
+    background-color: #585858;
+    cursor: not-allowed;
+}
+
+
+/* for laptop screens make hover effect for noblock button and leave and retry*/
+@media (min-width: 570px) {
+    .noblock button:hover {
+        background-color: #43b581;
+    }
+
+    .leave:hover {
+        background-color: #ff2b0a;
+    }
+
+    .retry:hover {
+        background-color: #ff0bf7;
+    }
+}

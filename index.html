@@ -1,0 +1,33 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <title>Live RPS</title>
+    </head>
+
+    <body style="background-color: black;color: whitesmoke;">
+        <h4 id="you"></h4>
+        <h4 id="partner"></h4>
+        <span class="score" id="myscore">0</span><span class="score">-</span><span class="score"
+            id="partnerscore">0</span>
+        <button class="btn leave" id="leave">Leave</button><button class="btn retry" id="retry">Retry</button><span class="hide" id="retry-text"> Rival wants Rematch</span><br>
+        <small></small>
+        <div class="interact">
+            <button onclick="action(this)" id="rock">R</button><button onclick="action(this)" id="paper">P</button><button
+                onclick="action(this)" id="scissors">S</button>
+        </div>
+        <h4 id="rps"></h4>
+        <h4 class="result" id="result-id"></h4>
+        <div class="hide" id="rps-status">
+            <span class="rps" id="yourps"></span><span class="rps"> vs </span><span class="rps" id="rivalrps"></span>
+        </div>
+        <!-- <h4 class="retry">You Lost</h4> -->
+        <script src="index.js"></script>
+    </body>
+
+</html>
