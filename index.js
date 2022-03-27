@@ -1,4 +1,4 @@
-let socket = io.connect('http://localhost:1729');
+let socket = io.connect('/');
 
 window.onload = () => {
     let name = localStorage.getItem('name');
