@@ -2,7 +2,7 @@
 **Live rock-paper-scissors :: LIVE** <br>
 
 ### *Play RPS live with a stranger*
-https://liverps.vercel.app
+# https://liverps.vercel.app
 
 ## Previous Version
 https://github.com/spuckhafte/RockPaperScissor
