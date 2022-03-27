@@ -204,7 +204,7 @@ async function startGame(roomNo, room) {
     for (let i = 0; i < RPS.length; i++) {
         if (rooms[roomNo] !== undefined && rooms[roomNo].status === '1' && arrays_equal(rooms[roomNo].players, Players)) {
             io.to(roomNo).emit('rps', RPS[i]);
-            if (i === 3) await sleep(3000);
+            if (i === 3) await sleep(800);
             else if (i === 4) {
                 io.to(roomNo).emit('unblock-btns');
                 await sleep(50);
