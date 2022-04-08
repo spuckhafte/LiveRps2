@@ -115,8 +115,10 @@ $('#retry').click(() => {
 
 function action(element) {
     let rps = element.id;
-    $('.interact').removeClass('noblock');
-    socket.emit('select', rps);
+    if ($('.interact').hasClass('noblock')) {
+        $('.interact').removeClass('noblock');
+        socket.emit('select', rps);
+    }
 }
 
 function showIds(room, query) {
