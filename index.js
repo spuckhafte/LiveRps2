@@ -1,4 +1,4 @@
-let socket = io.connect('https://liverps2.herokuapp.com/');
+let socket = io.connect('https://liverps.onrender.com/');
 
 window.onload = () => {
     let name = localStorage.getItem('name');
